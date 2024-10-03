@@ -2,12 +2,6 @@
 
 # Install Docker and Docker Compose on Ubuntu
 
-# Set up logging for the user data script in EC2 instances.
-# All output is saved to /var/log/user-data.log and sent to syslog and to console
-# This line is particularly useful in EC2 user data scripts because:
-# It helps in debugging issues with instance initialization.
-sudo exec > >(tee /var/log/user-data.log|logger -t user-data -s 2>/dev/console) 2>&1
-
 sudo -u ubuntu -i <<'EOF2'
 
 
