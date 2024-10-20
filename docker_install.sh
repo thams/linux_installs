@@ -23,6 +23,10 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plug
 
 sudo usermod -aG docker ${USER} # enable remote admin of docker
 
+# Useful tools
+sudo apt-get install -y wget curl netcat-openbsd
+
+
 # Optional: Prove it works.
 # sudo docker run hello-world
 
